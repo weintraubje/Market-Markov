@@ -1,11 +1,12 @@
 import pandas as pd
 import numpy as np
+import yfinance as yf
 
-def download_stock_data(symbol):
+def download_stock_data(symbol, start, end):
     """Downloads historical stock pricing data for an individual symbol"""
 
-    df = pd.DataFrame()  
-
+    df = pd.DataFrame()
+    
     # Print the symbol being downloaded
     print('DOWNLOADING ' + symbol, sep=',', end=' ... ', flush=True)  
 
