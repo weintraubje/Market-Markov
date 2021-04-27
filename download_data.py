@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 
-def download_stock_data(symbol):
+def download_stock_data(symbol, start, end):
     """Downloads historical stock pricing data for an individual symbol"""
 
     df = pd.DataFrame()  
